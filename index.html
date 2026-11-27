@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Le Bazar à jeux</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bungee&family=Outfit:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+  <a class="logo" href="#">Le Bazar</a>
+  <span><button id="snd" aria-pressed="true">Son : oui</button><button id="mus" aria-pressed="false">Musique : non</button></span>
+</header>
+<main>
+  <section id="home">
+    <h1>Le Bazar<br>à jeux</h1>
+    <p class="lead">Treize jeux refaits à la main. Tes records restent sur cet appareil.</p>
+    <div class="cards" id="cards"></div>
+  </section>
+  <section id="view" hidden>
+    <div class="bar">
+      <a class="back" href="#">← Menu</a>
+      <h2 id="vt"></h2>
+      <button class="back" id="fs" aria-label="Plein écran">⛶ Plein écran</button>
+    </div>
+    <div id="frame">
+      <button id="fsx" aria-label="Quitter le plein écran">✕</button>
+      <div id="stats"></div>
+      <div id="stage"></div>
+      <div id="ld" hidden></div>
+    </div>
+  </section>
+</main>
+<canvas id="fx"></canvas>
+<script src="js/core.js"></script>
+</body>
+</html>
